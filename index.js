@@ -1,5 +1,5 @@
+import {AwesomeKit} from './tools'
+
 module.exports = {
-    printMsg: function () {
-        console.log('this message is from awesome-kit!');
-    }
+    AwesomeKit
 }
