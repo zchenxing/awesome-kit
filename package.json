@@ -1,11 +1,25 @@
 {
-  "name": "awesome-kit",
-  "version": "0.0.3",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "yuanjie",
-  "license": "ISC"
+    "name": "awesome-kit",
+    "version": "0.0.4",
+    "description": "",
+    "main": "lib/index.js",
+    "scripts": {
+        "lib": "webpack --progress --color --config webpack.config.js",
+        "build": "babel src --out-dir lib",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/zyj7815/awesome-kit.git"
+    },
+    "homepage": "https://github.com/zyj7815/awesome-kit",
+    "author": "yuanjie",
+    "license": "ISC",
+    "devDependencies": {
+        "@babel/core": "^7.10.4",
+        "@babel/preset-env": "^7.10.4",
+        "babel-core": "^6.26.3",
+        "babel-loader": "^8.1.0",
+        "babel-preset-env": "^1.7.0"
+    }
 }
