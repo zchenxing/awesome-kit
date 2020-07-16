@@ -135,6 +135,12 @@ export const _reg = {
      */
     isLowercase: function(value) {
         return /^[a-z]+$/g.test(value);
+    },
+    
+    /**
+     * 只能是中文、数字、字母
+     */
+    isChar: function(value) {
+        return /^[\u4e00-\u9fa5_a-zA-Z0-9]+$/.test(value)
     }
-
 }
