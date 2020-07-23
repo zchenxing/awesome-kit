@@ -1,11 +1,13 @@
 {
     "name": "awesome-kit",
-    "version": "0.0.4",
+    "version": "0.0.6",
     "description": "",
     "main": "lib/index.js",
     "scripts": {
-        "lib": "webpack --progress --color --config webpack.config.js",
-        "build": "babel src --out-dir lib",
+        "build": "webpack --progress --color --config ./config/webpack.prod.config.js",
+        "dev": "webpack --progress --color --config ./config/webpack.dev.config.js",
+        "start": "cross-env NODE_ENV=development --config ./config/webpack.dev.config.js --env=dev",
+        "d": "cross-env NODE_ENV=development --config config/webpack.dev.config.js --mode development",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "repository": {
@@ -21,5 +23,15 @@
         "babel-core": "^6.26.3",
         "babel-loader": "^8.1.0",
         "babel-preset-env": "^1.7.0"
-    }
+    },
+    "dependencies": {
+        "cross-env": "^7.0.2",
+        "html-webpack-plugin": "^4.3.0"
+    },
+    "keywords": [
+        "tool",
+        "kit",
+        "util",
+        "modules"
+    ]
 }

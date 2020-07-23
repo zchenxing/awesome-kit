@@ -5,7 +5,7 @@ module.exports = {
     entry: './src/index.js',    // 入口文件
     output: {
         filename: "index.js",
-        path: path.join(__dirname, 'lib'),
+        path: path.join(__dirname, '../lib'),
     },
     module: {
         rules: [

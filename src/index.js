@@ -1,5 +1,3 @@
 import {AwesomeKit} from './tools'
 
-module.exports = {
-    AwesomeKit
-}
+export default AwesomeKit;

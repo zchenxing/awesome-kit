@@ -66,7 +66,7 @@ export const _reg = {
     },
 
     /**
-     * isIDCard
+     * 验证身份证
      * @param {string} value 
      */
     isIDCard: function(value) {
