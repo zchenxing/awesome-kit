@@ -1,3 +1,3 @@
-import {AwesomeKit} from './tools'
+import ASKit from './tools'
 
-export default AwesomeKit;
+export default ASKit;

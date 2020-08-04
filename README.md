@@ -9,10 +9,10 @@ npm install awesome-kit
 
 ## Usage
 ```
-import AwesomeKit from "awesome-kit";
+import ASKit from "awesome-kit";
 
 ...
-const isPostCode =  Awesome._reg.isPostcode("123124124124");
+const isPostCode =  ASKit._reg.isPostcode("123124124124");
 ...
 
 ```
