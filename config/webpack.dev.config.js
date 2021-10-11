@@ -4,7 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     mode: 'development',
-    entry: './src/index.js',    // 入口文件
+    entry: './package/index.js',    // 入口文件
     output: {
         filename: "index.js",
         path: path.join(__dirname, '../dist'),
@@ -22,7 +22,7 @@ module.exports = {
                 test: /\.js$/,
                 exclude: /(node_modules)/,
                 include: [
-                    path.join(__dirname, 'src')
+                    path.join(__dirname, 'package')
                 ],
                 use: {
                     loader: 'babel-loader',
